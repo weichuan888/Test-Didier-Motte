@@ -20,6 +20,9 @@ switch ($action){
 	case 'contacts':
 		require_once(VIEW . 'contacts.html');
 		break;
+	case 'index':
+		require_once(VIEW . 'index.html');
+		break;
 	default:
 		require_once(VIEW . '404.html');
 		break;
