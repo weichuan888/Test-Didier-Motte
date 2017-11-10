@@ -1,33 +1,34 @@
 /*---- Body ----*/
 
 	body{
-		-webkit-overflow-scrolling:touch;
-		color:#f7f7f7;
+		/*-webkit-overflow-scrolling:touch;*/
+		/*color:#f7f7f7;*/
 		/*background:#272727;*/
+
 	}
 
 	html,body{
-		height:100%;
 		padding:0;
 		margin:0;
+		height: 100%;
 	}
 
 
 /*---- Général ----*/
 	*{
 		font-family:"Lato","Open Sans", sans-serif;
-		-webkit-font-smoothing:antialiased;
+		/*-webkit-font-smoothing:antialiased;*/
 		margin:0;
 		padding:0;
 	}
 
 	a{
 		text-decoration: none;
-		color:#000;
+		/*color:#000;*/
 	}
 
 	p{
-		line-height:1.5;
+		/*line-height:1.5;*/
 	}
 
 	footer, header, nav, section{
@@ -42,6 +43,8 @@
 		padding: 0;
 		width:100%;
 		background-color:#272727;
+		position:relative;
+
 
 	}
 	.navUp{
@@ -53,6 +56,7 @@
 		margin-right: 20px;
 		margin-top: 8px;
 		font-size: 15px;
+		color: white;
 	}
 	.navUp .navRight  button{
 		display: inline-block;
@@ -91,17 +95,21 @@
 }
 .navCenterDown ul {
 	margin-left: 750px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .navCenterDown ul li {
 	display: inline-block;
-	border: 1px solid white;
+	border: 1px solid grey;
 	border-radius: 5px;
 	height: 20px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
+	font-size: 15px;
 
 
 }
@@ -109,6 +117,7 @@
 	float: right;
 	margin-top: -40px;
 	margin-right: 20px;
+	color:white;
 }
 /*header fin*/
 
@@ -127,58 +136,81 @@ blockquote{
 
 
 /*---- Stock ----*/
-	#stock h1{
+.stock h1 {
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 30px;
+	margin-left: 33%;
+}
+.stock{
 		text-align:center;
-		font-size: 200px;
+		font-family: "Lato","Open Sans","Avenir Next",sans-serif;
+		color: black;
+	  font-weight: 400;
 	}
 
 /*---- Contact ----*/
 
-	.contact{
-	text-align: justify;
+ .contact{
+	/*text-align: center;*/
 	background-color: transparent;
 	width: 100%;
-	margin-left: 500px;
-	margin-right: 500px;
-	}
+	text-align: center;
+	margin-right: 600px;
 
-h1 {
+	}
+ .contact h1 {
 	font-size: 30px;
 	font-style: normal;
 	font-weight: normal;
-	margin-left: 250px;
+	padding-top: 100px;
 	}
-
-h2 {
+ .contact h2 {
 	text-align: justify;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: bold;
 	}
+	.contact .magasin p {
+		float: left;
+	}
+ .contact .nom  h6{
 
-.nom, h6{
 	font-size: 18px;
 	font-weight: 600px;
 	}
-
-.nom, input {
+ .contact .nom input {
 	font-size: 15px;
-	}
 
-.magasin, p {
+	}
+ .contact .magasin, p {
 	font-size: 25px;
 	}
-
-.contact, p {
+ .contact, p {
 	text-align: justify;
 	font-size: 20px;
 	}
-
-.adresse p {
+.contact .adresse p {
 	font-size: 15px;
 	}
 
 /*---- Footer ----*/
 
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+}
+footer p{
+	text-align: center;
+	background-color: #272727;
+	color: white;
+
+}
+footer p a {
+	color: white;
+}
 
 
 
@@ -200,7 +232,7 @@ h2 {
 	    float: left;
 	}
 
-	h1, h2, h3 {
+	#presentation h1, h2, h3 {
 		font-family: "Lato","Open Sans","Avenir Next",sans-serif;
 		color: black;
 	    font-weight: 400;
